@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Prompt Refiner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>AI Prompt Refiner</h1>
+      <p class="subtitle">Paste a rough prompt. Get three sharper versions, with reasoning.</p>
+    </header>
+
+    <section class="input-section">
+      <textarea
+        id="promptInput"
+        placeholder="e.g. write me a blog post about dogs"
+        rows="5"
+      ></textarea>
+      <button id="refineBtn">Refine Prompt</button>
+    </section>
+
+    <section id="errorBox" class="error-box hidden"></section>
+
+    <section id="loadingBox" class="loading-box hidden">
+      <div class="spinner"></div>
+      <span>Refining your prompt...</span>
+    </section>
+
+    <section id="resultsSection" class="results hidden"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
